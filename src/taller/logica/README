@@ -1,0 +1,43 @@
+
+Grupo de trabajo, PROYECTO FINAL — Programación Interactiva.
+    Integrantes:
+        — Cristian David Avila Narvaez (1957500-2711)
+        — N/A.
+        — N/A.
+
+Procesos del desarrollo:
+    — Implementación de las clases:
+        Sabado, 11 Julio del 2020.
+
+            - Programador: Roger Vaca.
+            - Modificaciones: Cristian Avila.
+
+    — Creación del package Main, taller.ui y modificación al package de la lógica. Rename del proyecto.
+        Domingo, 12 Julio del 2020.
+
+            - Programador: Cristian Avila.
+            - Modificaciones: 
+
+    — Verificación de valores válidos:
+        Clases: Persona.java, Producto.java, Servicio.java, Taller.java, Vehiculo.java
+        Domingo, 12 Julio del 2020.
+
+            - Programador: Cristian Avila.
+            - Modificaciones: A futuro, con la implementación de los métodos.
+
+    — Marcación de auditoría en las clases:
+        Domingo, 12 Julio del 2020.
+
+            - Programador: Cristian Avila.
+            - Modificaciones: A falta de integrante en el grupo.
+
+    — Implementación de las Interfaces de Usuario:
+        Clases: IngresoVehiculoUI, AsignacionMecanicoUI, RegistroProductosUI, FacturacionProductosUI y TallerUI.
+        Nota: Se deja a la espera la implementación total de la lógica, debido a la falta de tiempo y al tener que afrontar el trabajo solo por el abandono de los compañeros.
+        Domingo, 30 Agosto del 2020.
+
+            - Programador: Cristian Avila.
+            - Modificaciones: A falta de integrante en el grupo.
+
+
+
