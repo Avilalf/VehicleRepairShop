@@ -75,4 +75,14 @@ public class Taller {
         throw new Exception("No se encontró el vehículo de placa: " + placa);
     }
 
+    // Agregar - Un método que permita agregar un Servicio al taller.
+    public void agregarServicio(Servicio nuevoServicio) {
+        for (Servicio registrarServicio : servicios) {
+            if (this.servicios.contains(nuevoServicio)) {
+                throw new IllegalArgumentException("El tipo de Servicio ya se encuentra registrado en el taller.");
+            }
+        }
+        this.servicios.add(nuevoServicio);
+    }
+
 }
