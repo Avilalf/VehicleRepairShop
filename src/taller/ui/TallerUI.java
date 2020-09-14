@@ -7,6 +7,8 @@ package taller.ui;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import sun.security.krb5.internal.ASRep;
 import taller.logica.Taller;
 
@@ -150,7 +152,12 @@ public class TallerUI extends javax.swing.JFrame {
 
         @Override
         public void actionPerformed(ActionEvent ae) {
-            IngresoVehiculoUI ui = new IngresoVehiculoUI(taller);
+            IngresoVehiculoUI ui = null;
+            try {
+                ui = new IngresoVehiculoUI(taller);
+            } catch (Exception ex) {
+                Logger.getLogger(TallerUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
             jDesktopPane1.add(ui);
             ui.setVisible(true);
         }

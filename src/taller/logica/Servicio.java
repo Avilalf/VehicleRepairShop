@@ -37,4 +37,9 @@ public class Servicio {
         return costo;
     }
 
+    @Override
+    public String toString() {
+        return this.nombre;
+    }
+
 }

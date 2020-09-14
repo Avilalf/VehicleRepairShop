@@ -85,4 +85,9 @@ public class Taller {
         this.servicios.add(nuevoServicio);
     }
 
+    @Override
+    public String toString() {
+        return this.servicios.toString();
+    }
+
 }

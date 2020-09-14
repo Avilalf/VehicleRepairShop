@@ -9,8 +9,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sql.rowset.serial.SerialArray;
 import javax.swing.JOptionPane;
 import taller.logica.Persona;
+import taller.logica.Servicio;
 import taller.logica.Taller;
 import taller.logica.TipoVehiculo;
 import taller.logica.Vehiculo;
@@ -23,13 +25,98 @@ public class IngresoVehiculoUI extends javax.swing.JInternalFrame {
 
     private Taller taller;
 
-    public IngresoVehiculoUI(Taller taller) {
+    public IngresoVehiculoUI(Taller taller) throws Exception {
 
         initComponents();
         this.taller = taller;
         buttonRegistrarVehiculo.addActionListener(new SaveListener());
         buttonCancel.addActionListener(new CancelListener());
         buttonSearch.addActionListener(new SearchListener());
+
+        // Creacion de objetos para los Servicios del taller a la hora de ingresar vehículo.
+        // Servicios asimilados con la lubricación de los vehículos:
+        Servicio s01 = new Servicio(01, "[LUBRICACIÓN] Cambio de Aceite", 10000);
+        Servicio s02 = new Servicio(02, "[LUBRICACIÓN] Cambio de Filtro", 10000);
+        // Servicios asimilados con la electricidad de los vehículos:
+        Servicio s03 = new Servicio(11, "[ELECTRICIDAD] Arranques", 12000);
+        Servicio s04 = new Servicio(12, "[ELECTRICIDAD] Alternadores", 12000);
+        Servicio s05 = new Servicio(13, "[ELECTRICIDAD] Encendido", 12000);
+        Servicio s06 = new Servicio(14, "[ELECTRICIDAD] Electro ventiladores", 12000);
+        Servicio s07 = new Servicio(15, "[ELECTRICIDAD] Afinación completa", 12000);
+        Servicio s08 = new Servicio(16, "[ELECTRICIDAD] Bujías", 12000);
+        Servicio s09 = new Servicio(17, "[ELECTRICIDAD] Cables", 12000);
+        Servicio s10 = new Servicio(18, "[ELECTRICIDAD] Problemas de temperatura", 12000);
+        // Servicios asimilados con la reparación de chapa y pintura:
+        Servicio s11 = new Servicio(21, "[CHAPA - PINTURA] Reparación de Chapa", 50000);
+        Servicio s12 = new Servicio(22, "[CHAPA - PINTURA] Pintura del vehículo", 50000);
+        Servicio s13 = new Servicio(23, "[CHAPA - PINTURA] Toques de mantenimiento", 50000);
+        // Servicios asimilados con la inyección electrónica y mecánica:
+        Servicio s14 = new Servicio(31, "[INYECCIÓN] Electrónica y Mecánica", 20000);
+        Servicio s15 = new Servicio(32, "[INYECCIÓN] Reparación y carga de aire acondicionado", 20000);
+        Servicio s16 = new Servicio(33, "[INYECCIÓN] Tren delantero", 20000);
+        Servicio s17 = new Servicio(34, "[INYECCIÓN] Frenos", 20000);
+        Servicio s18 = new Servicio(35, "[INYECCIÓN] Carburación", 20000);
+        Servicio s19 = new Servicio(36, "[INYECCIÓN] Cajas de velocidades", 20000);
+        Servicio s20 = new Servicio(37, "[INYECCIÓN] Embragues", 20000);
+        Servicio s21 = new Servicio(38, "[INYECCIÓN] Suspensión, alineación y balanceo", 20000);
+        Servicio s22 = new Servicio(39, "[INYECCIÓN] Apuesta a punto electrónica", 20000);
+        Servicio s23 = new Servicio(391, "[INYECCIÓN] Reperación y rectificación de motores", 20000);
+        Servicio s24 = new Servicio(392, "[INYECCIÓN] Cambio de Correas de distribución", 20000);
+        Servicio s25 = new Servicio(393, "[INYECCIÓN] Limpieza y calibrado de inyectores electrónicos", 20000);
+
+        // Agregar los servicios creados anteriormente al objeto taller.
+        taller.agregarServicio(s01);
+        taller.agregarServicio(s02);
+        taller.agregarServicio(s03);
+        taller.agregarServicio(s04);
+        taller.agregarServicio(s05);
+        taller.agregarServicio(s06);
+        taller.agregarServicio(s07);
+        taller.agregarServicio(s08);
+        taller.agregarServicio(s09);
+        taller.agregarServicio(s10);
+        taller.agregarServicio(s11);
+        taller.agregarServicio(s12);
+        taller.agregarServicio(s13);
+        taller.agregarServicio(s14);
+        taller.agregarServicio(s15);
+        taller.agregarServicio(s16);
+        taller.agregarServicio(s17);
+        taller.agregarServicio(s18);
+        taller.agregarServicio(s19);
+        taller.agregarServicio(s20);
+        taller.agregarServicio(s21);
+        taller.agregarServicio(s22);
+        taller.agregarServicio(s23);
+        taller.agregarServicio(s24);
+        taller.agregarServicio(s25);
+
+        // Agregar los Servicios al JComboBox de los servicios solicitados.
+        jcbServicioSolicitado.addItem(s01.toString());
+        jcbServicioSolicitado.addItem(s02.toString());
+        jcbServicioSolicitado.addItem(s03.toString());
+        jcbServicioSolicitado.addItem(s04.toString());
+        jcbServicioSolicitado.addItem(s05.toString());
+        jcbServicioSolicitado.addItem(s06.toString());
+        jcbServicioSolicitado.addItem(s07.toString());
+        jcbServicioSolicitado.addItem(s08.toString());
+        jcbServicioSolicitado.addItem(s09.toString());
+        jcbServicioSolicitado.addItem(s10.toString());
+        jcbServicioSolicitado.addItem(s11.toString());
+        jcbServicioSolicitado.addItem(s12.toString());
+        jcbServicioSolicitado.addItem(s13.toString());
+        jcbServicioSolicitado.addItem(s14.toString());
+        jcbServicioSolicitado.addItem(s15.toString());
+        jcbServicioSolicitado.addItem(s16.toString());
+        jcbServicioSolicitado.addItem(s17.toString());
+        jcbServicioSolicitado.addItem(s18.toString());
+        jcbServicioSolicitado.addItem(s19.toString());
+        jcbServicioSolicitado.addItem(s20.toString());
+        jcbServicioSolicitado.addItem(s21.toString());
+        jcbServicioSolicitado.addItem(s22.toString());
+        jcbServicioSolicitado.addItem(s23.toString());
+        jcbServicioSolicitado.addItem(s24.toString());
+        jcbServicioSolicitado.addItem(s25.toString());
     }
 
     IngresoVehiculoUI() {
@@ -187,8 +274,6 @@ public class IngresoVehiculoUI extends javax.swing.JInternalFrame {
 
         jLabel13.setText("Servicio(s) Solicitado(s)");
 
-        jcbServicioSolicitado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         buttonAdd.setText("Agregar");
 
         jListServicios.setModel(new javax.swing.AbstractListModel<String>() {
@@ -276,7 +361,7 @@ public class IngresoVehiculoUI extends javax.swing.JInternalFrame {
                         .addComponent(buttonIngresarVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, 368, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(buttonCancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -463,6 +548,15 @@ public class IngresoVehiculoUI extends javax.swing.JInternalFrame {
                 JOptionPane.showMessageDialog(IngresoVehiculoUI.this, ex.getMessage());
                 Logger.getLogger(IngresoVehiculoUI.class.getName()).log(Level.SEVERE, null, ex);
             }
+        }
+
+    }
+
+    public class addService implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent ae) {
+
         }
 
     }
