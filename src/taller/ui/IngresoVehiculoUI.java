@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * — Autor: Cristian David Avila Narvaez
+ * — Código de estudiante: 1957500-2711
+ * — Programación Interactiva.
+ * — Grupo: Grupo de Proyecto 04. Cristian Avila.
  */
 package taller.ui;
 
@@ -9,7 +10,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.sql.rowset.serial.SerialArray;
 import javax.swing.JOptionPane;
 import taller.logica.Persona;
 import taller.logica.Servicio;
@@ -487,13 +487,13 @@ public class IngresoVehiculoUI extends javax.swing.JInternalFrame {
                 String placa = jtxfPlaca.getText();
                 String marca = jcbMarca.getSelectedItem().toString();
                 String tipo = jcbTipo.getSelectedItem().toString();
-                String linea = jtxfLinea.toString();
-                String modelo = jtxfModelo.toString();
+                String linea = jtxfLinea.getText();
+                String modelo = jtxfModelo.getText();
 
                 //Propietario
                 long nuip = Long.parseLong(jtxfNUIP.getText());
-                String nombres = jtxfNombres.toString();
-                String apellidos = jtxfApellidos.toString();
+                String nombres = jtxfNombres.getText();
+                String apellidos = jtxfApellidos.getText();
                 long telefono = Long.parseLong(jtxfTelefono.getText());
 
                 //Creación de objetos

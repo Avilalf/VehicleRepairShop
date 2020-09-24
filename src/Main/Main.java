@@ -1,7 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * — Autor: Cristian David Avila Narvaez
+ * — Código de estudiante: 1957500-2711
+ * — Programación Interactiva.
+ * — Grupo: Grupo de Proyecto 04. Cristian Avila.
  */
 package Main;
 

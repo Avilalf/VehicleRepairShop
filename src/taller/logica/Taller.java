@@ -1,8 +1,8 @@
 /* 
- * — Autor: Roger Andrey Vaca Arboleda
- * — Código de estudiante: 1958154-2711
+ * — Autor: Cristian David Avila Narvaez
+ * — Código de estudiante: 1957500-2711
  * — Programación Interactiva.
- * — Grupo: Grupo de Proyecto 04. Cristian Avila, Roger Vaca.
+ * — Grupo: Grupo de Proyecto 04. Cristian Avila.
  */
 package taller.logica;
 
@@ -53,6 +53,12 @@ public class Taller {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public LinkedList<Vehiculo> getVehiculos() {
+        return vehiculos;
+    }
+    
+    
 
     // Métodos recomendados en relaciones de asosiación uno a muchos:
     // Agregar - Un método que permita registrar vehículo al taller.

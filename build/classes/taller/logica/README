@@ -9,27 +9,27 @@ Procesos del desarrollo:
     — Implementación de las clases:
         Sabado, 11 Julio del 2020.
 
-            - Programador: Roger Vaca.
+            - Programador: Cristian Avila.
             - Modificaciones: Cristian Avila.
 
     — Creación del package Main, taller.ui y modificación al package de la lógica. Rename del proyecto.
         Domingo, 12 Julio del 2020.
 
             - Programador: Cristian Avila.
-            - Modificaciones: 
+            - Modificaciones: Cristian Avila.
 
     — Verificación de valores válidos:
         Clases: Persona.java, Producto.java, Servicio.java, Taller.java, Vehiculo.java
         Domingo, 12 Julio del 2020.
 
             - Programador: Cristian Avila.
-            - Modificaciones: A futuro, con la implementación de los métodos.
+            - Modificaciones: Cristian Avila.
 
     — Marcación de auditoría en las clases:
         Domingo, 12 Julio del 2020.
 
             - Programador: Cristian Avila.
-            - Modificaciones: A falta de integrante en el grupo.
+            - Modificaciones: Cristian Avila.
 
     — Implementación de las Interfaces de Usuario:
         Clases: IngresoVehiculoUI, AsignacionMecanicoUI, RegistroProductosUI, FacturacionProductosUI y TallerUI.
@@ -37,7 +37,20 @@ Procesos del desarrollo:
         Domingo, 30 Agosto del 2020.
 
             - Programador: Cristian Avila.
-            - Modificaciones: A falta de integrante en el grupo.
+            - Modificaciones: Cristian Avila.
+
+    — Implementación de las funciones básicas necesarias para un control del taller, y algo de lógica:
+        Clases: IngresoVehiculoUI, taller.java.
+        A fecha de entrega.
+
+
+        ATENCIÓN: 
+            La presente es para informar del por qué éste regular desempeño en el proyecto, como puede ver, le presenté mi caso desde hace muchisimo tiempo y...
+            me mandaste a buscar grupo que le faltara un integrante. Resulta que a la final todos pasaron de mi, no me respondieron ni nada, por ende seguí solo pero...
+            bastante desanimado, ya los dos compañeros que iniciaron conmigo hayan abandonado de esa manera y sin avisarme acaso, causandome estrés y molestia.
+            Se que suena como excusa pero no he pasado los mejores momentos con ésta cuarentena, por eso decido no matarme la cabeza y entregar hasta donde me fue...
+            posible desarrollar el software por falta de tiempo en mis tareas diarias personales. Entrego toda la parte del trabajo que me correspondía y hasta mas. 
+            Muchas gracias por la comprensión, y es con esa intencion el mensaje, entendimiento en el caso y mas nada. Gracias profesor.
 
 
 
